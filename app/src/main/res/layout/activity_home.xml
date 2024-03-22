@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Home_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F11761"
+            android:orientation="vertical">
+
+            <!-- Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/menu__1_"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="start"
+                    android:layout_gravity="center"
+                    android:text="Hi There"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/images_removebg_preview"/>
+            </LinearLayout>
+            <!-- Search Bar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="0dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/button_bg"
+                    android:backgroundTint="@color/white"
+                    android:layout_marginRight="4dp"
+                    android:textColorHint="@color/black"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:iconifiedByDefault="false"
+                    android:queryHint="Search Here" />
+
+                <ImageView
+                    android:id="@+id/filterIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/filter__1_"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoStart="true"
+                android:flipInterval="2000"
+                android:inAnimation="@android:anim/slide_in_left"
+                android:outAnimation="@android:anim/slide_out_right">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="159dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/images1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="179dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="40dp"
+                    android:src="@drawable/images" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="179dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="40dp"
+                    android:src="@drawable/images1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="179dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="40dp"
+                    android:src="@drawable/images" />
+
+            </ViewFlipper>
+        </LinearLayout>
+
+        <!-- Top product-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:layout_margin="10dp"
+                android:text="Top Movies">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:orientation="horizontal">
+
+
+<!--  Henna Card -->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp">
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:orientation="vertical"
+                        android:src="@drawable/hand"
+                        android:background="@drawable/movie_card_bg"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/hennaLL">
+                        <ImageView
+                            android:id="@+id/henna"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/hand"
+                            android:layout_centerHorizontal="true"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/hennaLL"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_centerHorizontal="true"
+                        android:text="Henna"/>
+                </RelativeLayout>
+<!--HD Makeup Crad-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp">
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/movie_card_bg"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/HD_MakeupLL">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/makeup"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/HD_Makeup"/>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/HD_MakeupLL"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_centerHorizontal="true"
+                        android:text="Makeup"/>
+                </RelativeLayout>
+<!--Hari Styles Card-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp">
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/movie_card_bg"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/haristyleLL">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/curling_hair"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/HairStyle"/>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/haristyleLL"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_centerHorizontal="true"
+                        android:text="Hair Style"/>
+                </RelativeLayout>
+<!-- Nail Art Card-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp">
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/movie_card_bg"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/Nail_ArtLL">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/nail_polish"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/Nail_Art"/>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Nail_ArtLL"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_centerHorizontal="true"
+                        android:text="Nail Art"/>
+                </RelativeLayout>
+<!--Saree Drapping-->
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp">
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/movie_card_bg"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/Saree_drappingLL">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/nail_polish"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/Saree_drapping"/>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Saree_drappingLL"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_centerHorizontal="true"
+                        android:text="Nail Art"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--Top Artist-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="4dp"
+            android:layout_margin="10dp"
+            android:text="Top Artists"/>
+
+<!--Artist Card-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <!-- First LinearLayout -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/card_bg"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- First item in the first LinearLayout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/download__1_">
+                    <!-- Add your content here -->
+                </LinearLayout>
+
+                <!-- Second item in the first LinearLayout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="100dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Yaaradi Nee Mohini"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="The Artist"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+                    <!-- Add your content here -->
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- Second LinearLayout -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/card_bg"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- First item in the first LinearLayout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/download__1_">
+                    <!-- Add your content here -->
+                </LinearLayout>
+
+                <!-- Second item in the first LinearLayout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="100dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:padding="4dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Yaaradi Nee Mohini"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="The Artist"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+                    <!-- Add your content here -->
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

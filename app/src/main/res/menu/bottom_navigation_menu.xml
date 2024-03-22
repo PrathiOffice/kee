@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home__1_" />
+    <item
+        android:id="@+id/booking"
+        android:title="Booking"
+        android:icon="@drawable/booking" />
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/profile" />
+    <item
+        android:id="@+id/setting"
+        android:title="Setting"
+        android:icon="@drawable/settings" />
+</menu>

@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Recycler_View" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">#F63074</item>
+        <item name="colorPrimaryDark">#F11761</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

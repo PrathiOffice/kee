@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    <color name="colorPrimary">#039cba</color>-->
+    <color name="colorPrimary">#F11761</color>
+    <color name="colorSecondary">#002868</color>
+    <color name="colorHint">#808080</color>
+    <color name="colorPrimaryDark">#F11761</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#7c7c7c</color>
+    <color name="dark_gray">#878585</color>
+    <color name="full_dark_gray">#606060</color>
+
+    <color name="pink">#A3084B</color>
+    <color name="blue">#07206A</color>
+    <color name="lg">#504F4F</color>
+    <color name="dg">#1C1C1C</color>
+    <!--SINCH-->
+
+    <color name="sinch_purple">#ff63029d</color>
+    <color name="off_white">#fffafafa</color>
+    <color name="greyish">#fff2f1f2</color>
+    <color name="black">#000000</color>
+
+    <color name="agora_blue">#FF00A0EB</color>
+    <color name="lightColorAccent">#30FF4081</color>
+
+    <color name="dark_black">#CC262626</color>
+
+    <color name="transparent_75_white">#ACFFFFFF</color>
+
+    <color name="indicator_1">#55B3C2</color>
+    <color name="indicator_2">#64A4A4</color>
+    <color name="indicator_3">#66D7B9</color>
+    <color name="indicator_4">#FDBC7D</color>
+
+
+    <color name="normal">#4CAF50</color>
+    <color name="abnormal">#FFC107</color>
+    <color name="alert">#F44336</color>
+    <color name="alertNew">#F46800</color>
+
+    <color name="gesture_color">#FF000000</color>
+</resources>
