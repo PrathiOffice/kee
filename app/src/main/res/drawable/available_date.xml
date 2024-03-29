@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#FFFFFF" /> <!-- Background color of the popup -->
+    <stroke android:width=".5dp"
+        android:color="#333333" /> <!-- Border color -->
+    <corners android:radius="8dp" /> <!-- Corner radius of the border -->
+</shape>

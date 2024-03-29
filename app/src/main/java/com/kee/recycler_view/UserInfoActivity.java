@@ -18,6 +18,8 @@ import java.util.Locale;
 
 public class UserInfoActivity extends AppCompatActivity {
     private TextView selectedDateTextView;
+    private TextView selectedTimeTextView;
+
     private EditText nameEditText;
     private EditText phoneEditText;
     private EditText emailEditText;
@@ -37,11 +39,30 @@ public class UserInfoActivity extends AppCompatActivity {
         pincodeEditText = findViewById(R.id.pincodeEditText);
         submitButton = findViewById(R.id.submitButton);
 
+
+
+
+
+        // Initialize views
+        selectedDateTextView = findViewById(R.id.selectedDateTextView);
+        selectedTimeTextView = findViewById(R.id.selectedTimeTextView);
+
+        // Retrieve selected date and time from Intent extras
+        String selectedDate = getIntent().getStringExtra("selectedDate");
+        String selectedTime = getIntent().getStringExtra("selectedTime");
+
+        // Display the selected date and time
+        selectedDateTextView.setText("Selected Date: " + selectedDate);
+        selectedTimeTextView.setText("Selected Time: " + selectedTime);
+
+
+
         // Retrieve selected date from Intent extras
-        long selectedDate = getIntent().getLongExtra("selectedDate", 0);
+//        long selectedDate = getIntent().getLongExtra("selectedDate", 0);
+
 
         // Display the selected date
-        selectedDateTextView.setText(formatDate(selectedDate));
+//        selectedDateTextView.setText(formatDate(selectedDate));
 
         // Set onClickListener for the submit button
         submitButton.setOnClickListener(new View.OnClickListener() {
@@ -60,17 +81,18 @@ public class UserInfoActivity extends AppCompatActivity {
                     String email = emailEditText.getText().toString().trim();
                     String pincode = pincodeEditText.getText().toString().trim();
 
-                    // Retrieve selected date from Intent extras
-                    long selectedDate = getIntent().getLongExtra("selectedDate", 0);
-                    String formattedDate = formatDate(selectedDate);
+                    // Retrieve selected date and time from Intent extras
+                    String selectedDate = getIntent().getStringExtra("selectedDate");
+                    String selectedTime = getIntent().getStringExtra("selectedTime");
 
-                    // Start UserDetailsActivity and pass user details
+                    // Start UserDetailsActivity and pass user details along with date and time
                     Intent intent = new Intent(UserInfoActivity.this, UserDetailsActivity.class);
                     intent.putExtra("name", name);
                     intent.putExtra("phone", phone);
                     intent.putExtra("email", email);
                     intent.putExtra("pincode", pincode);
-                    intent.putExtra("selectedDate", formattedDate);
+                    intent.putExtra("selectedDate", selectedDate);
+                    intent.putExtra("selectedTime", selectedTime);
                     startActivity(intent);
                 }
             }
@@ -145,4 +167,6 @@ public class UserInfoActivity extends AppCompatActivity {
     private void showToast(String message) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
+
+
 }

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+
+
+    <color name="availableColor">#00FF00</color> <!-- Green -->
+    <color name="pastColor">#808080</color> <!-- Gray -->
+
     <!--    <color name="colorPrimary">#039cba</color>-->
     <color name="colorPrimary">#F11761</color>
     <color name="colorSecondary">#002868</color>

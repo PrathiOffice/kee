@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="materialCalendarDayStyle" format="reference"/>
+    <style name="CustomMaterialCalendarTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <!-- Customize color for available dates (Green) -->
+        <item name="materialCalendarDayStyle">@style/CustomMaterialCalendarDay</item>
+        <item name="materialCalendarFullscreenTheme">@style/CustomMaterialCalendarFullscreen</item>
+    </style>
+    <style name="CustomMaterialCalendarDay" parent="Widget.MaterialComponents.MaterialCalendar.Day">
+        <item name="android:textColor">@color/availableColor</item>
+    </style>
+    <style name="CustomMaterialCalendarFullscreen" parent="ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen">
+        <!-- Customize color for past dates (Gray) -->
+        <item name="android:colorBackground">@color/pastColor</item>
+    </style>
+</resources>

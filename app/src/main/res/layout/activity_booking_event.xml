@@ -1,53 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent"
-    tools:context=".Booking_event">
+    android:orientation="vertical">
 
-    <Button
-        android:id="@+id/bookButton"
+    <TextView
+        android:id="@+id/monthTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Book"
-        android:layout_centerInParent="true"/>
+        android:text="Month"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"/>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/dateCardView"
+    <LinearLayout
+        android:id="@+id/buttonContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/bookButton"
-        android:layout_margin="16dp"
-        android:visibility="gone"
-        app:cardCornerRadius="8dp">
+        android:orientation="vertical"
+        android:padding="8dp"/>
 
-        <TextView
-            android:id="@+id/dateTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text=""
-            android:textColor="@android:color/black"
-            android:textSize="16sp" />
-
-    </androidx.cardview.widget.CardView>
-
-    <!-- Content area -->
-    <FrameLayout
-        android:id="@+id/contentContainer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/bottomNavigationView"
-        android:layout_alignParentTop="true"/>
-
-    <!-- Bottom navigation view -->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/bottom_navigation_menu" />
-
-
-</RelativeLayout>
+</LinearLayout>

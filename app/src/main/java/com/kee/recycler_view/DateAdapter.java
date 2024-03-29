@@ -43,7 +43,6 @@ public class DateAdapter extends RecyclerView.Adapter<DateAdapter.ViewHolder> {
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            textViewDate = itemView.findViewById(R.id.textViewDate);
         }
     }
 }

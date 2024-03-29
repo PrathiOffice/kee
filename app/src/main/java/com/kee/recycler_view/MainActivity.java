@@ -16,6 +16,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     Button Login, Join;
+
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 100;
 
     @Override
